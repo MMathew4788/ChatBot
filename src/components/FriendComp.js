@@ -1,9 +1,8 @@
-import Greet from "./Greet";
-import AskDob from "./AskDob";
 import React from "react";
 import { useState } from "react";
+import FriendCompResult from "./FriendCompResult";
 
-function FirstGreet() {
+function FriendComp() {
   const [name, setName] = useState("");
   function handleChange(event) {
     setName(event.target.value);
@@ -18,7 +17,7 @@ function FirstGreet() {
   return (
         <div>
         <div className="input-container">
-          Please enter your Name :
+          Please enter your Friend's Name :
           <input
             type="text"
             name="name"
@@ -28,10 +27,14 @@ function FirstGreet() {
           />
           <button onClick={handleFirstClick} className="button">Submit</button>
         </div>
-        {isShown && <Greet name={name} />}
-        {isShown && <AskDob/>}
+        {isShown && <FriendCompResult name={name} />}
+        {isShown && <div className="output-container"> 
+        Hope you enjoyed the chat with me<br></br>
+        Bye!!!!
+        </div>}
+        
       </div>
   );
 }
 
-export default FirstGreet;
+export default FriendComp;

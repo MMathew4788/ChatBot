@@ -1,5 +1,6 @@
 import React from "react";
 import DobDetails from "./DobDetails";
+import FriendComp from "./FriendComp";
 import { useState } from "react";
 
 function AskDob() {
@@ -21,6 +22,7 @@ function AskDob() {
           <button onClick={handleSecondClick} className="button">Submit</button>
       </div>
       {isShown && <DobDetails/>}
+      { isShown && <FriendComp/>}
     </div>
   );
 }

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .global-container {
-    @apply flex items-center min-h-screen max-h-fit justify-center bg-zinc-600
+    @apply flex flex-col items-center min-h-screen max-h-fit justify-center bg-zinc-600
 }
 
 .input-container {
