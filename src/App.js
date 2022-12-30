@@ -2,10 +2,9 @@ import FirstGreet from "./components/FirstGreet";
 import React from "react";
 
 function App() {
-  
   return (
-    <div className="bg-white">
-      <FirstGreet/>
+    <div className="global-container">
+        <FirstGreet />
     </div>
   );
 }

@@ -17,17 +17,17 @@ function FirstGreet() {
 
 
   return (
-        <div className="m-px p-3">
         <div>
+        <div className="input-container">
           Please enter your Name :
           <input
             type="text"
             name="name"
             id="name"
             onChange={handleChange}
-            className="border border-slate-400 mx-2"
+            className="input-box"
           />
-          <button onClick={handleFirstClick} className="px-2 py-0 border rounded-md ml-2 border-black">Submit</button>
+          <button onClick={handleFirstClick} className="button">Submit</button>
         </div>
         {isShown && <Greet name={name} />}
         {isShown && <AskDob/>}
