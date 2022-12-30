@@ -22,7 +22,7 @@ function AskDob() {
           <button onClick={handleSecondClick} className="button">Submit</button>
       </div>
       {isShown && <DobDetails/>}
-      { isShown && <FriendComp/>}
+      {isShown && <FriendComp/>}
     </div>
   );
 }
