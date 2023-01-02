@@ -1,6 +1,6 @@
 import React from "react";
 import DobDetails from "./DobDetails";
-import FriendComp from "./FriendComp";
+import FriendComp from "../ThirdQuestion/FriendComp";
 import { useState } from "react";
 
 function AskDob() {
@@ -12,12 +12,11 @@ function AskDob() {
   return (
     <div>
       <div className="input-container">
-      Please enter your Date of Birth <br></br>
-      and I will tell more about your personality:
+      Please enter your Date of Birth and I will tell more about your personality:
           <input
             type="Date"
             name="Date"
-            className="input-box"
+            className="input-box min-w-full md:min-w-fit"
           />
           <button onClick={handleSecondClick} className="button">Submit</button>
       </div>

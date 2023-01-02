@@ -1,7 +1,8 @@
 import Greet from "./Greet";
-import AskDob from "./AskDob";
+import AskDob from "../SecondQuestion/AskDob";
 import React from "react";
 import { useState } from "react";
+import BotIntro from "./BotIntro";
 
 function FirstGreet() {
   const [name, setName] = useState("");
@@ -17,6 +18,7 @@ function FirstGreet() {
 
   return (
         <div>
+        <BotIntro/>  
         <div className="input-container">
           Please enter your Name :
           <input

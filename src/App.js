@@ -1,11 +1,9 @@
-import FirstGreet from "./components/FirstGreet";
-import BotIntro from "./components/BotIntro";
+import FirstGreet from "./components/FirstQuestion/FirstGreet";
 import React from "react";
 
 function App() {
   return (
     <div className="global-container">
-        <BotIntro/>
         <FirstGreet />
     </div>
   );

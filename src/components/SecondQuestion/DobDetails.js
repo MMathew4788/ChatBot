@@ -4,8 +4,8 @@ function DobDetails() {
 
   return <div className="flex flex-col space-y-0 ">
   <div className="output-container">
-    As per your zodiac sign you loves to be number one.<br></br> 
-    Bold and ambitious, even in the most challenging situations,<br></br> 
+    As per your zodiac sign you loves to be number one. 
+    Bold and ambitious, even in the most challenging situations, 
     you'll make sure that you are always on top! </div>;
     
     {<div className="output-container mt-0">
