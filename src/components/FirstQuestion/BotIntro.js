@@ -4,7 +4,7 @@ function BotIntro() {
   return (
     <div className="output-container"> 
     Hello,<br></br> 
-    I'm your chatbot " Matt "
+    I'm your chatbot " Mathew "
     </div>
   );
 }

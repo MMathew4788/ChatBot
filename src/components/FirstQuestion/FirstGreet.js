@@ -12,7 +12,9 @@ function FirstGreet() {
   
   const [isShown, setIsShown] = useState(false);
   function handleFirstClick (event) {
-    setIsShown(true); //toggle shown state
+    if (name !== "") {
+      setIsShown(true);
+    } //toggle shown state
   };
 
 
